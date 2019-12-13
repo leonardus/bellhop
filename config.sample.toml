@@ -1,0 +1,32 @@
+[bot]
+prefix = "!"
+username = "username"
+nick = "nick"
+realname = "guy dudeman"
+admins = [
+    "cloak/vhost"
+]
+enabled_hooks = [ 
+    "sentience"
+]
+enabled_commands = [
+    "QUIT",
+    "JOIN",
+    "PART"
+]
+
+[server]
+network = "irc.example.org"
+port = 6667
+ssl = false
+channels = [
+    "#welcome"
+]
+
+[services]
+username = "username"
+password = "hunter2"
+useSASL = true
+
+[strings]
+sentience = "bellhop (Lua) https://github.com/leonardus/bellhop"
