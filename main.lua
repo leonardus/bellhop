@@ -64,6 +64,7 @@ while true do
     local line = parse(next)
     if not line then
         print("WARN: Failed to parse: " .. next)
+        goto continue
     end
 
     -- SASL/registration
@@ -97,4 +98,6 @@ while true do
             end
         end
     end
+
+    ::continue::
 end
